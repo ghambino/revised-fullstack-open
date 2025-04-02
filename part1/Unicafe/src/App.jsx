@@ -87,9 +87,23 @@ function App() {
 
       {
         totalfeedback > 0 ? (
-          <div>
-            <Statistics feedbackBreakdown={feedbackBreakdownData}/>
-          </div>
+          <table>
+            <thead></thead>
+            <tbody>
+              {
+                feedbackBreakdownData.map((unit, index) => (
+                  <tr key={index}>
+                    <td>{unit.name}</td>
+                    {unit.type ? (
+                      <td>{unit.displayedData}%</td>
+                    ): (
+                      <td>{unit.displayedData}</td>
+                    )}
+                  </tr>
+                ))
+              }
+            </tbody>
+          </table>
         ) : (
           <p>No feedback given</p>
         )

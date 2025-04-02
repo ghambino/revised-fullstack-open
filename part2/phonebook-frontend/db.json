@@ -1,0 +1,29 @@
+{
+    "persons": [
+      {
+        "name": "abdulwahab abbas",
+        "number": "08129165867",
+        "id": 1
+      },
+      {
+        "name": "adetunji mistura",
+        "number": "08028236323",
+        "id": 2
+      },
+      {
+        "name": "abdulwahab medinat",
+        "number": "07023430559",
+        "id": 3
+      },
+      {
+        "name": "soladoye oladimeji",
+        "number": "8580-86895-737",
+        "id": 4
+      },
+      {
+        "name": "muhammadu buhari",
+        "number": "4858-55878-868",
+        "id": 5
+      }
+    ]
+  }
