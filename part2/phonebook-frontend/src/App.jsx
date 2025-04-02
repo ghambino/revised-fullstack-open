@@ -49,9 +49,8 @@ const DataEntryPoint = ({persons, setPersons, setErrorMessage}) => {
   
     }else {
       noteService.create(newPerson).then((returnedData) => {
-      console.log(returnedData);
-      setPersons([...persons, returnedData]);
-        setErrorMessage(`Added ${returnedData.name}`)
+      setPersons([...persons, returnedData.data]);
+        setErrorMessage(`Added ${returnedData.data.name}`)
         setTimeout(() => {
           setErrorMessage(null)
         }, 5000)
